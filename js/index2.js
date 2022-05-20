@@ -38,3 +38,53 @@ for(let i = 0; i < hacker1.length; i++){
 // for (let i = sentence.length - 1; i >= 0; i--) {
 //     console.log(`El caracter es ${sentence.charAt(i)}`)
 // }
+
+
+
+
+
+
+//1
+const hacker10 = 'Guillem'
+    console.log(`The driver's name is ${hacker10}`)
+
+const hacker20 = 'Bernat'
+console.log(`The navigator's 's name is ${hacker20}`)
+
+
+//2
+if (hacker10.length > hacker20.length) {
+    console.log(`The driver has the longest name, it has ${hacker10.length} characters.`)
+} else if  (hacker10.length > hacker20.length) {
+    console.log(`It seems that the navigator has the longest name, it has ${hacker20.length} characters.`)
+} else {
+    console.log(`Wow, you both have equally long names, ${hacker20.length} characters!`)
+}
+
+
+//3.1
+let capsName = ''
+
+for (let i = 0; i < hacker10.length ; i++) {
+    capsName += hacker10[i].toUpperCase() + ' '
+}
+
+console.log(capsName)
+
+
+
+//3.2
+let reverse = ''
+for (let i = hacker20.length -1; i >= 0; i--) {
+    reverse += hacker20[i] 
+}
+
+console.log(reverse)
+
+
+
+
+
+
+
+
