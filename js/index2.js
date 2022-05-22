@@ -85,6 +85,48 @@ console.log(reverse)
 
 
 
+//----------------------------------------------------------------------------------------
 
 
+console.log('----------------------------->   JUST DO IT AGAIN   <--------------------------------')
+//1
+const coder1 = 'Guillem'
+const coder2 = 'Bernat'
 
+console.log(`The driver's name is ${coder1}`)
+console.log(`The navigator's name is ${coder2}`)
+
+
+//2
+if (coder1.length > coder2.length) {
+    console.log(`The driver has the longest name, it has ${coder1.length} characters.`)
+} else if (coder1.length > coder2.length) {
+    console.log(`It seems that the navigator has the longest name, it has ${coder2.length} characters.`)
+} else {
+    console.log(`Wow, you both have equally long names, ${coder1.length} characters!`)
+}
+
+//3.1
+let newCoder = ''
+for (let i = 0; i <= coder1.length -1; i++) {
+    newCoder += coder1[i].toUpperCase() + ' '
+}
+console.log(newCoder)
+
+
+//3.2
+let reverseCoder = ''
+for (let i = coder1.length - 1; i >= 0; i--) {
+    reverseCoder += coder1[i]
+}
+console.log(reverseCoder)
+
+
+//3.3
+
+if (coder1.localeCompare(coder2) === -1) {
+    console.log(`The driver's name goes first.`)
+} else if (coder1.localeCompare(coder2) === 1) {
+    console.log(`Yo, the navigator's name goes first definitely.`)
+} else {
+    console.log(`What?! You both have the same name?`)}
