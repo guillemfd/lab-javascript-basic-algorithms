@@ -130,3 +130,25 @@ if (coder1.localeCompare(coder2) === -1) {
     console.log(`Yo, the navigator's name goes first definitely.`)
 } else {
     console.log(`What?! You both have the same name?`)}
+
+
+
+
+//BONUS
+//1
+let lorem1 = 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.'
+
+let count = 0
+for (let i = 0; i <= lorem1.length; i++) {
+    if (lorem1[i] === ' ')
+    count++
+}
+console.log(count)
+
+//2
+let etCount = 0
+for (let i = 0; i <= lorem1.length; i++) {
+    if (lorem1[i] === ' ' && lorem1[i + 1] === 'e' && lorem1[i + 2] === 't' && lorem1[i + 3] === ' ')
+    etCount++
+}
+console.log(etCount)
