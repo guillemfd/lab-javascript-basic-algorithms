@@ -3,30 +3,55 @@
 const hacker1 = 'Guillem'
     console.log(`The driver's name is ${hacker1}`)
 
-const hacker2 = 'BERNAT'
+const hacker2 = 'Bernat'
     console.log(`The navigator's name is ${hacker2}`)
 
 
-
 // Iteration 2: Conditionals
+//v1
 if (hacker1.length > hacker2.length) {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
 } else if (hacker1.length < hacker2.length) {
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
 } else {
-    console.log(`Wow, you both have equally long names, XX characters!`)
+    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
 }
+
+
+//v2
+console.log('Ex. 2 V2 START')
+if (hacker1.length > hacker2.length) {
+    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
+} else if (hacker1.length < hacker2.length) {
+    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
+} else if (hacker1.length == hacker2.length) {
+    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
+}
+console.log('Ex. 2 V2 END')
+
+
 
 
 
 //Iteration 3: Loops
-let newDriver = ''
+//v1
+        console.log('Ex. 3 V1 START')
+        let newDriver = ''
 
-for(let i = 0; i < hacker1.length; i++){
-    newDriver += hacker1[i].toUpperCase() + ' '
-}
-  console.log(newDriver)
+        for(let i = 0; i < hacker1.length; i++){
+            newDriver += hacker1[i].toUpperCase() + ' '
+        }
+        console.log(newDriver)
+        console.log('Ex. 3 V1 END')
 
+//v2
+        console.log('Ex. 3 V2 START')
+                let longName = ''
+                for (i=0; i<hacker1.length; i++) {
+                    longName += hacker1[i] + ' '
+                }
+                console.log(longName)
+        console.log('Ex. 3 V2 END')
 
 
 // for (let i = 0; i < hacker1.length; i++) {
